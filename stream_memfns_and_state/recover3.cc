@@ -17,6 +17,7 @@ int main() {
 		else if (cin.fail()) {   
 			cout << "Please try again and enter a number\n";
 			cin.clear();
+			// However there is an ignore function which will remove characters from the buffer
 			cin.ignore(20, '\n');                // Remove next 20 characters or everything up to next newline
 			cin >> x;
 		}

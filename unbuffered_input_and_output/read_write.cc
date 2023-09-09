@@ -5,6 +5,8 @@
 using namespace std;
 
 int main() {
+	// As we are not using a memory buffer provided by a stream we need to provide our own
+	
 	const int filesize{10};              // The size of the memory buffer
 	char filebuf[filesize];              // The memory buffer
 	string filename{"input.txt"};

@@ -2,7 +2,7 @@
 #include <string>
 
 using namespace std;
-
+// lambda expressions has access to nonlocal and static variables in the same scope.
 int main() {
 	string str1{"Hello, "};
 	string str2{"World!"};

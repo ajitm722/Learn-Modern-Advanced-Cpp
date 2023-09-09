@@ -12,6 +12,6 @@ int main() {
 		cout << "You entered the number " << x << "\n";
 	else if (cin.fail())                                   // Not an int. Probably a user error - try again
 		cout << "Please try again and enter a number\n";
-	else if (cin.bad())                                    // A serious error occurred
+	else if (cin.bad())                                    // A serious error occurred dont replicate
 		cout << "Something has gone seriously wrong\n";
 }

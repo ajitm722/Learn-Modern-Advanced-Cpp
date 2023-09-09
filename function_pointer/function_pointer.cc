@@ -2,6 +2,9 @@
 
 using namespace std;
 
+// A functions executable code is stored in memory.
+// We can get a pointer whose address is start of this code
+// func_ptr is a pointer to the function
 void func(int x, int y) {
 	cout << x << " + " << y << " = " << x + y << endl;
 }

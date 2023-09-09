@@ -15,7 +15,7 @@ class Test {};
 int main() {
 	// Narrowing conversions are not allowed
 	int y = 7.7;                                      // Legal, although compilers may warn
-	//int y{7.7};                                     // Illegal
+	// int y{7.7};                                     // Illegal
 	cout << "y = " << y << endl;
 	
 	// Avoids inconsistency
@@ -37,5 +37,6 @@ int main() {
 	print(uni_two);
 	
 	// Avoids ambiguity
-	Test test();                    // Object creation or function declaration? "Most vexing parse"
+	// Test test();                    // Object creation or function declaration? "Most vexing parse"
+	Test test{};            //Only object creation
 }

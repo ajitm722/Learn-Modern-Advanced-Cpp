@@ -22,8 +22,8 @@ int main() {
 	ge_5 long_enough;
 	for (auto name: names) {
 		if (long_enough(name)) {
-			cout << "Loop: the first name with > 5 characters is \"" << name << "\"\n";
-			break;
+			cout << "names with > 5 characters is \"" << name << "\"\n";
+			// break;
 		}
 	}
 	

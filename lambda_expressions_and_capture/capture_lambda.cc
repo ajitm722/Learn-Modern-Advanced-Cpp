@@ -5,15 +5,14 @@
 
 using namespace std;
 
-using namespace std;
-
 int main() {
 	vector<string> words{ "a", "collection", "of", "words", "with", "varying", "lengths" };
 
 	int n{5};
 	// Find the first element with more than 5 characters
 	auto res = find_if(cbegin(words), cend(words), 
-				[n] (const string& str) { return str.size() > n; }         // Lambda captures local variable n
+				[n] (const string& str) { return str.size() > n; }         // Lambda captures local variable n and 
+																			//then it is available inside function body
 	);
 
 	// Display it

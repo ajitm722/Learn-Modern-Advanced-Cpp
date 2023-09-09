@@ -1,6 +1,6 @@
 #include <iostream>
 #include <vector>
-
+typedef vector<int> IntVec;
 using namespace std;
 
 int main() {

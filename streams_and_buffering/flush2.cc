@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	ofstream ofile("log.txt");
+	ofstream ofile("log2.txt");
 	
 	if (!ofile) {
 		cout << "Could not open file\n";
@@ -14,6 +14,8 @@ int main() {
 	for (int i = 0; i < 1'000'000; ++i) {
 		cout << i << endl;
 		ofile << i << endl;
+		if (i == 30'000)
+			throw std::exception();
 	}
 	
 	ofile.close();

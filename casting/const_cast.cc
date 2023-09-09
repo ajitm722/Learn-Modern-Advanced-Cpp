@@ -1,6 +1,7 @@
 #include <iostream>
 
 using namespace std;
+// an ugly operation requires ugly syntax
 
 void print(char *str) {       // Doesn't mutate str, but not declared const
     cout << str << endl;
@@ -8,6 +9,6 @@ void print(char *str) {       // Doesn't mutate str, but not declared const
 
 int main() {
 	const char *msg = "Hello, world!";
-	//print(msg);               // Error - invalid conversion
+	// print(msg);               // Error - invalid conversion
 	print(const_cast<char *>(msg));
 }

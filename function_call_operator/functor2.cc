@@ -2,7 +2,10 @@
 #include <vector>
 
 using namespace std;
-
+//Functors are classes so they could contain member functions and data members
+// In general, they should only be used to wrap functions
+//They can however have data members to store values which need to be kept between function calls(maintaining state).
+//CHECK functor3 example
 class evenp {
 public:
 	bool operator() (int n) {

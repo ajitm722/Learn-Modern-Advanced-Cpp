@@ -6,11 +6,15 @@ void func(int i) {
 	cout << "func(int) called\n";
 }
 
-void func(int *i) {
-	cout << "func(int *) called\n";
-}
-
+// void func(int *i) {
+// 	cout << "func(int *) called\n";
+// }
+// void func(long i) {
+// 	cout << "func(long) called\n";
+// }
 int main() {
-	func(NULL);
-	func(nullptr);
+	 func(NULL); 
+	//works differently with different compilers
+	
+	// func(nullptr);
 }

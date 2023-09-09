@@ -13,7 +13,6 @@ int main() {
 	cout << "int16_t: " << sizeof(int16_t) << endl;
 	cout << "int32_t: " << sizeof(int32_t) << endl;
 	cout << "int64_t: " << sizeof(int64_t) << endl;
-	cout << endl;
 	
 	cout << "uint8_t: " << sizeof(uint8_t) << endl;
 	cout << "uint16_t: " << sizeof(uint16_t) << endl;

@@ -8,9 +8,9 @@ int main() {                                     // Scope containing the lambda 
 	static int answer{42};                       // Static variable in containing scope
 	const int one{1};                            // Local variable in containing scope
 	const int& r_one{one};                       // Local variable in containing scope
-	
+	cout <<"global:" << global << endl;  
 	[]() {                                       // Start of lambda body
-		cout << global << endl;                  // Lambda body can access non-local variables
+		cout <<"global:" << global << endl;                  // Lambda body can access non-local variables
 		cout << answer << endl;                  // Lambda body can access static variables
 		// Does not compile with Visual C++
 		//cout << one << endl;                   // Lambda body can read local variables, provided...

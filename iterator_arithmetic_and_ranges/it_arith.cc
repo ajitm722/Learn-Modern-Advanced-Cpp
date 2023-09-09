@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	string str{"Hello"};
+	string str{"Hello World!"};
 	
 	cout << "str: " << str << endl;
 	cout << "Number of elements: " << str.end() - str.begin() << endl;
@@ -18,5 +18,5 @@ int main() {
 	
 	// end() - begin() gives the number of elements
 	auto mid = begin(str) + (end(str) - begin(str))/2;      // Iterator to middle element
-	cout << "Middle element is " << *mid << endl;
+	cout << "Middle element is " << *(mid) << endl;
 }

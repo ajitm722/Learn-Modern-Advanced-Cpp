@@ -11,6 +11,8 @@ struct point {
 	int32_t y;
 };
 //#pragma pack(pop)
+// IN binary mode data stored in file will be identical to the data in memory
+// Might be used when working with file formats(e.g. media files)
 
 int main() {
 	point p{'a', 1, 2};

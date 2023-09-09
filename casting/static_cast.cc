@@ -7,3 +7,5 @@ int main() {
 	cout << c << endl;
 	cout << static_cast<char>(c) << endl;
 }
+
+//can also be used to convert a pointer to base class object to pointer to derived

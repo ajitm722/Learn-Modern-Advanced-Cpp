@@ -7,7 +7,7 @@ int main() {
 		"Fred", "Wilma", "Pebbles", "Dino", "Barney", "Betty", "Bamm-Bamm", "Hoppy"
 	};
 
-	cout << "names[1][2] = " << names[1*4 + 2] << endl;
+	cout << "names[1][2] = " << names[1*4 + 2] << endl; // i * col_size + j
 
 	cout << "\nThe elements of names are:\n";
 	for (int row = 0; row < 2; ++row) {

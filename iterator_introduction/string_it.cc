@@ -8,7 +8,8 @@ int main() {
 	string::iterator it = str.begin();                // Start of string
 
 	while (it != str.end()) {                         // Gone past last element?
-		cout << *it << ", ";
+		cout << *it << ", ";					//returns an iterator corresponding to the element after the last element. invalid and
+												// must not be dereferenced.
 		++it;
 	}
 }

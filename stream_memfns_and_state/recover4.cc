@@ -19,7 +19,9 @@ int main() {
 			cout << "Please try again and enter a number\n";
 			cin.clear();
 			//cin.ignore(20, '\n');                // Remove next 20 characters or everything up to next newline
-			cin.ignore(numeric_limits<streamsize>::max(), '\n');
+			cin.ignore(numeric_limits<streamsize>::max(), '\n'); 
+			//best way is to get entire buffer size and remove max number of characters that can be stored in buffer
+			cout<<numeric_limits<streamsize>::max()<<'\n';
 			cin >> x;
 		}
 	}

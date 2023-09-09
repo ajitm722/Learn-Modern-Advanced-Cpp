@@ -4,7 +4,7 @@
 using namespace std;
 
 int main() {
-	string str{"Hello"};
+	string str{"12345"};
 	
 	cout << "str: " << str << endl;
 	cout << "Number of elements: " << distance(begin(str), end(str)) << endl;
@@ -14,7 +14,7 @@ int main() {
 	if (second != end(str))
 		cout << "Second element is " << *second << endl;
 
-	auto last = prev(end(str));                 // Returns iterator to last element
+	auto last = prev(end(str));                 // Returns iterator to last element (end - 1)
 	
 	if (last != end(str))
 		cout << "Last element is " << *last << endl;
@@ -28,3 +28,4 @@ int main() {
 		cout << " with index " << distance(str.begin(), mid) << endl;
 	}
 }
+// for (int i=0;i<10;i++) -> range written as [0,10) i>=0 and i<10

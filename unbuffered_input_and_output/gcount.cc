@@ -17,6 +17,8 @@ int main() {
 	}
 
 	ifile.read(filebuf, filesize);       // Fetch data from the file into the memory buffer
+	// We might need to know how much data an input stream has sent us
+	// TO detect partial or incomplete transfers
 	auto nread = ifile.gcount();         // How many bytes did we receive?
 	ifile.close();
 

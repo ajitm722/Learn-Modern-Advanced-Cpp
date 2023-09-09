@@ -15,6 +15,7 @@ int main() {
 	cout << "s1: " << s1 << ", s2: " << s2 << endl <<endl;
 	
 	// Non-member swap function
+	// This global function has overloads for all the built in and library types
 	cout << "Calling non-member function swap()\n";
 	swap(s1, s2);
 	cout << "s1: " << s1 << ", s2: " << s2 << endl << endl;

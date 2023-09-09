@@ -1,7 +1,7 @@
 #include <iostream>
 
 using namespace std;
-
+// All expression assignments get evaluated to 42
 int main() {
 	// Numeric literals are decimal by default
 	int decimal = 42;            // 4*10 + 2*1 = 42

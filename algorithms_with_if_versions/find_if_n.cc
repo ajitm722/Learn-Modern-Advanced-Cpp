@@ -26,6 +26,6 @@ int main() {
 	auto res = find_if(cbegin(names), cend(names), ge_n(5));
 
 	// Display it
-	if (res != cend(names))
+	while (res != cend(names))
 		cout << "The first word with > 5 characters is \"" << *res << "\"\n";
 }
